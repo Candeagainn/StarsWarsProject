@@ -1,24 +1,29 @@
-### Práctica RestAssured - Proyecto Stars Wars 
+### Práctica RestAssured - Proyecto Stars Wars - API testing - Automation
 ---
 
-###Tecnologías utilizadas:
-<img src="https://github.com/Candeagainn/StarsWarsProject/assets/104110428/85f218f3-8095-45ef-8ff8-dc0bc867bd69">
+### Tecnologías utilizadas:
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"  height="40"/>
+          
+---
 Este es un proyecto de de API Testing usando Java, RestAssured e implementando POJOS
 En esta práctica hicimos testing a una API real. Se realizó el proyecto con una arquitectura adecuada para organizar y poder reutilizar las llamadas a la API, usando POJOS.
 Se hizo un test para cada request diferente, realizando las siguientes acciones:
 
 1. Probar el endpoint people/2/ y comprobar que la respuesta sea un código 200, que el atributo "skin color" sea "gold" y la cantidad de peliculas en las que aparece, se debe verificar que sean 6
----
+
 2. Solicitar el endpoint de la segunda pelicula en la que people/2 estuvo presente (pero usando la respuesta que obtuvimos de la primera llamada). Verificar que la fecha de estreno tenga el formato correcta y que la respuesta incluya personajes, planetas, naves, vehiculos y especies. Esos elementos no deben estar vacíos. 
----
+
 3. Solicitar  el endpoint del primer planeta presente en la llamada al endpoint de la pelicula que hicimos en el test 2 (pero usando la respuesta de la llamada anterior). Verificar que la gravedad y el terreno coincidan con los valores devueltos por la respuesta, usando fixtures.
----
+
 4. En la misma respuesta que obtuvimos al llamar al planeta, tomar el url de la respuesta y llamarlo. Validar que la respuesta sea exactamente la misma que la del llamado anterior.
----
+
 5. Hacer una llamada al films/7 y verificar que la respuesta sea un código de error 404.
 
 
+Los tests se encuentran completamente comentados para facilitar su comprensión
+
 ---
+
 ### RestAssured Practice
 
 For this practice, we are going to test a real API using JAVA, RestAssured, any test runner and an appropriate framework architecture to organize and reuse the API calls (Do not forget POJOS!). 
